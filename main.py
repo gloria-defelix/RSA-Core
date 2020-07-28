@@ -4,6 +4,8 @@ import storage
 import email_helper
 from google.cloud import error_reporting
 
+# ***GLORIA ADDED THIS LINE - REFERENCE: "Deploying a Python Flask site" https://google.qwiklabs.com/focuses/3339?parent=catalog***
+CLOUD_STORAGE_BUCKET = os.environ.get('CLOUD_STORAGE_BUCKET')
 
 app = Flask(__name__)
 app.config.update(
