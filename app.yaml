@@ -17,5 +17,6 @@ entrypoint: gunicorn -b :$PORT main:app
 runtime_config:
     python_version: 3
 
+#GLORIA DEFELIX Changed "dashes" / "-" to "Underscores" / "_" for the "<your_cloud_storage_bucket> variable (Colab was throwing an error)
 env_variables:
-    CLOUD_STORAGE_BUCKET: <your-cloud-storage-bucket>
+    CLOUD_STORAGE_BUCKET: <your_cloud_storage_bucket>
